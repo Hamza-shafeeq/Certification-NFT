@@ -1,0 +1,41 @@
+.header-container {
+
+
+  /* height: 18vh; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.15);
+  
+}
+
+
+
+/* .logo {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+} */
+
+.logo-image {
+/* position: absolute; */
+  width: 250px;
+  height: 109px;
+  left: 15px;
+  top: 0;
+  /* 
+  background-color: aqua; */
+}
+
+
+
+.heading-title {
+/* background-color: rebeccapurple; */
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}

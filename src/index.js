@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import MetamaskButton from './Components/MetamaskButton';
+import Homepage from './Components/Homepage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <MetamaskButton /> */}
+    <Homepage />
   </React.StrictMode>
 );
 
