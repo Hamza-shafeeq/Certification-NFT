@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './polyfill';
 
 import reportWebVitals from './reportWebVitals';
 import MetamaskButton from './Components/MetamaskButton';

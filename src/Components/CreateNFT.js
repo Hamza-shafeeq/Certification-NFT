@@ -1,9 +1,7 @@
-import React, { useState, useContext } from "react";
-import Context from "../context/contractContext";
-import axios from "axios";
-import { useForm } from "react-hook-form";
-import { ContractState } from "../context/contractState";
-import { mintNFT } from "../scripts/mintNFT";
+import axios from "axios"
+import React, { useState } from "react"
+import { useForm } from "react-hook-form"
+import { mintNFT } from "../scripts/mintNFT"
 // https://gateway.pinata.cloud/ipfs/QmYXEZGtq2pSS7ESzSxHvzqWBokqAmwSB6UiEJAzx8CM2u
 
 //https://ipfs.io/ipfs/QmYXEZGtq2pSS7ESzSxHvzqWBokqAmwSB6UiEJAzx8CM2u

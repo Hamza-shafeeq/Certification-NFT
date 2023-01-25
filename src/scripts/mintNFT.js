@@ -1,8 +1,10 @@
-require("dotenv").config();
-const API_URL = process.env.API_URL;
+import { createAlchemyWeb3 } from "@alch/alchemy-web3"
+
+
+const API_URL = process.env.API_URL
 const PUBLIC_KEY = process.env.PUBLIC_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const { createAlchemyWeb3 } = require("@alch/alchemy-web3");
+
 const web3 = createAlchemyWeb3(API_URL);
 
 const contract = require("../artifacts/contracts/CertificationNFT.sol/CertificationNFT.json");
@@ -14,7 +16,7 @@ const nftContract = new web3.eth.Contract(contract.abi, contractAddress);
 
 
 //create transaction
-async function mintNFT(tokenURI) {
+export async function mintNFT(tokenURI) {
   const nonce = await web3.eth.getTransactionCount(PUBLIC_KEY, "latest"); //get latest nonce
 
   //the transaction
@@ -51,8 +53,3 @@ async function mintNFT(tokenURI) {
       console.log(" Promise failed:", err);
     });
 }
-
-module.exports = {
-  mintNFT
-}
-// mintNFT(`https://ipfs.io/ipfs/QmQqNgL23nU6Byyc9bxxvdE39U5wZVtGkKa34PSw5RGpvJ`);
